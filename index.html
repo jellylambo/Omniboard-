@@ -9,16 +9,11 @@
   <meta property="og:url" content="https://jellylambo.github.io/Omniboard-/">
   <meta property="og:title" content="OmniBoard — The Last Keyboard You’ll Ever Need">
   <meta property="og:description" content="Experience the world’s first intelligent interface that thinks with you while keeping your data sovereign. No app-switching. No tracking. Just flow.">
-  
   <meta property="og:image" content="https://jellylambo.github.io/Omniboard-/preview.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:url" content="https://jellylambo.github.io/Omniboard-/">
-  <meta name="twitter:title" content="OmniBoard — The Last Keyboard You’ll Ever Need">
-  <meta name="twitter:description" content="Experience the world’s first intelligent interface that thinks with you while keeping your data sovereign. No app-switching. No tracking. Just flow.">
-  
   <meta name="twitter:image" content="https://jellylambo.github.io/Omniboard-/preview.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,11 +31,7 @@
       --dark-gray: #1E2530;
     }
 
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
       font-family: 'Inter', system-ui, -apple-system, sans-serif;
@@ -54,11 +45,7 @@
 
     #particles-js {
       position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: -1;
+      top: 0; left: 0; width: 100%; height: 100%; z-index: -1;
     }
 
     .container {
@@ -70,12 +57,9 @@
       z-index: 1;
     }
 
-    /* ── Navigation ── */
     nav {
       position: fixed;
-      top: 0;
-      width: 100%;
-      z-index: 100;
+      top: 0; width: 100%; z-index: 100;
       background: rgba(11, 14, 20, 0.85);
       backdrop-filter: blur(10px);
       border-bottom: 1px solid rgba(0, 242, 255, 0.1);
@@ -88,18 +72,9 @@
       height: 80px;
     }
 
-    .logo {
-      font-size: 1.6rem;
-      font-weight: 700;
-      letter-spacing: -0.5px;
-      color: white;
-    }
+    .logo { font-size: 1.6rem; font-weight: 700; color: white; }
 
-    .nav-links {
-      display: flex;
-      gap: 48px;
-      font-weight: 500;
-    }
+    .nav-links { display: flex; gap: 48px; }
 
     .nav-links a {
       color: var(--silver);
@@ -107,9 +82,7 @@
       transition: color 0.2s;
     }
 
-    .nav-links a:hover {
-      color: var(--cyan);
-    }
+    .nav-links a:hover { color: var(--cyan); }
 
     .btn {
       padding: 10px 24px;
@@ -119,27 +92,16 @@
       transition: all 0.25s;
       cursor: pointer;
       border: none;
-      font-size: 1rem;
     }
 
-    .btn-cyan {
-      background: var(--cyan);
-      color: #000;
-    }
+    .btn-cyan { background: var(--cyan); color: #000; }
 
-    .btn-cyan:hover {
-      box-shadow: 0 0 15px rgba(0, 242, 255, 0.5);
-      transform: translateY(-1px);
-    }
-
-    /* ── Hero ── */
     .hero {
       min-height: 100vh;
       display: flex;
       align-items: center;
       padding-top: 100px;
       text-align: center;
-      position: relative;
     }
 
     .hero-content {
@@ -152,104 +114,35 @@
       margin: 0 auto;
     }
 
-    .hero h1 {
-      font-size: clamp(3.5rem, 8vw, 5.8rem);
-      font-weight: 700;
-      line-height: 1.05;
-      margin-bottom: 1.5rem;
-      color: white;
-    }
-
-    .hero p {
-      font-size: 1.35rem;
-      color: var(--gray);
-      max-width: 720px;
-      margin: 0 auto 3rem;
-    }
-
-    .video-placeholder {
+    /* Video Styling */
+    .hero-video {
       width: 100%;
-      max-width: 900px;
+      max-width: 800px;
       aspect-ratio: 16 / 9;
-      margin: 4rem auto;
-      background: linear-gradient(135deg, #1a1f2e, #0f141f);
+      margin: 3rem auto;
       border-radius: 16px;
-      border: 1px solid rgba(0, 242, 255, 0.12);
-      box-shadow: 0 0 40px rgba(0, 242, 255, 0.12);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--cyan);
-      font-size: 1.4rem;
-      font-weight: 500;
+      border: 1px solid rgba(0, 242, 255, 0.2);
+      box-shadow: 0 0 50px rgba(0, 242, 255, 0.15);
+      display: block;
+      object-fit: cover;
     }
 
-    .form-container {
-      max-width: 520px;
-      margin: 0 auto 1rem;
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-
-    @media (max-width: 768px) {
-      .hero h1 { font-size: 3.4rem; }
-      .section { padding: 100px 0; }
-      .manifesto { padding: 60px 24px; }
-      .hero-content { padding: 2.5rem 1.8rem; }
-    }
-
-    /* Footer social links styling */
-    .social-links a {
-      color: var(--gray);
-      font-size: 1.4rem;
-      transition: color 0.2s;
-      text-decoration: none;
-      margin: 0 12px;
-    }
-
-    .social-links a:hover {
-      color: var(--cyan);
-    }
-
-    .social-links a span {
-      font-size: 1.1rem;
-      font-weight: 500;
-    }
-    
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
       gap: 30px;
       margin-top: 40px;
     }
-    
+
     .feature {
       padding: 30px;
       background: rgba(30, 37, 48, 0.5);
       border-radius: 15px;
       border: 1px solid rgba(0, 242, 255, 0.1);
     }
-    
-    .feature h3 {
-      color: var(--cyan);
-      margin-bottom: 15px;
-    }
-
-    .section-title {
-      text-align: center;
-      font-size: 2.5rem;
-      margin-bottom: 20px;
-    }
-
-    .manifesto {
-      text-align: center;
-      padding: 80px 0;
-    }
 
     footer {
-      padding: 40px 0;
+      padding: 60px 0;
       text-align: center;
       border-top: 1px solid rgba(0, 242, 255, 0.1);
     }
@@ -265,11 +158,8 @@
       <div class="nav-links">
         <a href="#features">Features</a>
         <a href="#security">Security</a>
-        <a href="#manifesto">Manifesto</a>
       </div>
-      <button class="btn btn-cyan" data-tally-open="PdO5lV" data-tally-layout="modal" data-tally-emoji-text="👋" data-tally-emoji-animation="wave">
-        Join Waitlist
-      </button>
+      <button class="btn btn-cyan" data-tally-open="PdO5lV">Join Waitlist</button>
     </div>
   </nav>
 
@@ -277,97 +167,32 @@
     <div class="container">
       <div class="hero-content">
         <h1>The Last Keyboard You’ll Ever Need.</h1>
-        <p>Experience the world’s first intelligent interface that thinks with you while keeping your data sovereign. No app-switching. No tracking. Just flow.</p>
+        <p>Experience the world’s first intelligent interface that thinks with you while keeping your data sovereign.</p>
 
-        <div class="video-placeholder">
-          <span style="opacity: 0.6;">[ Watch OmniBoard in Action ]</span>
-        </div>
+        <video autoplay muted loop playsinline poster="preview.jpg" class="hero-video">
+          <source src="1001190338.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
 
-        <div class="form-container">
-          <button 
-            class="btn btn-cyan" 
-            data-tally-open="PdO5lV" 
-            style="padding: 20px 48px; font-size:1.2rem; width: 100%; max-width: 400px;"
-          >
-            Get Early Access
-          </button>
-        </div>
-
-        <p style="font-size: 0.9rem; margin-top: 15px; color: var(--cyan); letter-spacing: 1px; text-transform: uppercase; font-weight: 600;">Join 5,000+ early adopters</p>
+        <button class="btn btn-cyan" data-tally-open="PdO5lV" style="padding: 20px 48px; font-size:1.2rem;">
+          Get Early Access
+        </button>
       </div>
     </div>
   </section>
-
-  <section class="section" id="features">
-    <div class="container">
-      <h2 class="section-title">Powered by Magic. Protected by Design.</h2>
-
-      <div class="features-grid">
-        <div class="feature">
-          <h3>The Magic Button</h3>
-          <p>Instant AI search, definitions, explanations and smart completions — all triggered right from a contextual buffer inside your keyboard. No leaving the field.</p>
-        </div>
-
-        <div class="feature">
-          <h3>Pro AI Tools</h3>
-          <p>Real-time Tone Shifter (Professional ↔ Casual ↔ Creative) and Live Translation that understands context and nuance — works across apps without copy-paste.</p>
-        </div>
-
-        <div class="feature" id="security">
-          <h3>Security Pillar</h3>
-          <p>Zero-logging architecture. Local-only privacy mode. Your keystrokes, corrections and prompts never leave your device unless you explicitly choose to share.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <div class="container">
-      <div class="manifesto" id="manifesto">
-        <h2>Our North Star: The Sovereign User.</h2>
-        <p style="font-size:1.2rem; max-width:680px; margin:0 auto;">
-          We believe your data is an extension of your mind.<br><br>
-          OmniBoard is built on a Zero-Logging Architecture.<br>
-          We do not track, we do not store, and we do not sell.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    <div class="container">
-      <p>© 2026 OmniBoard. Built for Privacy. Powered by Magic.</p>
-      
-      <div class="social-links">
-        <a href="https://x.com/Lambogini_Boy" target="_blank" rel="noopener noreferrer">
-          <span>@Lambogini_Boy</span>
-        </a>
-        <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="#" target="_blank" rel="noopener noreferrer">GitHub</a>
-      </div>
-    </div>
-  </footer>
 
   <script async src="https://tally.so/widgets/embed.js"></script>
 
   <script>
     particlesJS('particles-js', {
       "particles": {
-        "number": { "value": 60, "density": { "enable": true, "value_area": 800 } },
+        "number": { "value": 60 },
         "color": { "value": "#00f2ff" },
-        "shape": { "type": "circle" },
-        "opacity": { "value": 0.3, "random": true },
-        "size": { "value": 3, "random": true },
-        "line_linked": { "enable": true, "distance": 150, "color": "#00f2ff", "opacity": 0.2, "width": 1 },
-        "move": { "enable": true, "speed": 1.5, "direction": "none", "out_mode": "out" }
-      },
-      "interactivity": {
-        "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" } }
-      },
-      "retina_detect": true
+        "opacity": { "value": 0.3 },
+        "move": { "enable": true, "speed": 1.5 }
+      }
     });
   </script>
 
 </body>
-  </html>
-  
+</html>
