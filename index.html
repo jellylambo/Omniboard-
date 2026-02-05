@@ -5,27 +5,26 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OmniBoard — The Last Keyboard You’ll Ever Need</title>
 
-  <!-- Open Graph / WhatsApp, Facebook, LinkedIn, Discord, Telegram, etc. -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jellylambo.github.io/Omniboard-/">
   <meta property="og:title" content="OmniBoard — The Last Keyboard You’ll Ever Need">
   <meta property="og:description" content="Experience the world’s first intelligent interface that thinks with you while keeping your data sovereign. No app-switching. No tracking. Just flow.">
-  <meta property="og:image" content="https://raw.githubusercontent.com/jellylambo/Omniboard-/main/preview.jpg">
+  
+  <meta property="og:image" content="https://jellylambo.github.io/Omniboard-/preview.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
-  <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://jellylambo.github.io/Omniboard-/">
   <meta name="twitter:title" content="OmniBoard — The Last Keyboard You’ll Ever Need">
   <meta name="twitter:description" content="Experience the world’s first intelligent interface that thinks with you while keeping your data sovereign. No app-switching. No tracking. Just flow.">
-  <meta name="twitter:image" content="https://raw.githubusercontent.com/jellylambo/Omniboard-/main/preview.jpg">
+  
+  <meta name="twitter:image" content="https://jellylambo.github.io/Omniboard-/preview.jpg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
-  <!-- particles.js CDN -->
   <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
   
   <style>
@@ -218,14 +217,48 @@
       font-size: 1.1rem;
       font-weight: 500;
     }
+    
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-top: 40px;
+    }
+    
+    .feature {
+      padding: 30px;
+      background: rgba(30, 37, 48, 0.5);
+      border-radius: 15px;
+      border: 1px solid rgba(0, 242, 255, 0.1);
+    }
+    
+    .feature h3 {
+      color: var(--cyan);
+      margin-bottom: 15px;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .manifesto {
+      text-align: center;
+      padding: 80px 0;
+    }
+
+    footer {
+      padding: 40px 0;
+      text-align: center;
+      border-top: 1px solid rgba(0, 242, 255, 0.1);
+    }
   </style>
 </head>
 <body>
 
-  <!-- Particle Background -->
   <div id="particles-js"></div>
 
-  <!-- Navigation with Tally modal trigger -->
   <nav>
     <div class="container nav-inner">
       <div class="logo">OmniBoard</div>
@@ -240,7 +273,6 @@
     </div>
   </nav>
 
-  <!-- Hero section with Tally modal trigger -->
   <section class="hero">
     <div class="container">
       <div class="hero-content">
@@ -266,7 +298,6 @@
     </div>
   </section>
 
-  <!-- Features -->
   <section class="section" id="features">
     <div class="container">
       <h2 class="section-title">Powered by Magic. Protected by Design.</h2>
@@ -290,7 +321,6 @@
     </div>
   </section>
 
-  <!-- Manifesto -->
   <section class="section">
     <div class="container">
       <div class="manifesto" id="manifesto">
@@ -304,7 +334,6 @@
     </div>
   </section>
 
-  <!-- Footer with your real X handle -->
   <footer>
     <div class="container">
       <p>© 2026 OmniBoard. Built for Privacy. Powered by Magic.</p>
@@ -319,10 +348,8 @@
     </div>
   </footer>
 
-  <!-- Tally embed script – required for the modal popup to work -->
   <script async src="https://tally.so/widgets/embed.js"></script>
 
-  <!-- Particles.js initialization -->
   <script>
     particlesJS('particles-js', {
       "particles": {
@@ -342,4 +369,5 @@
   </script>
 
 </body>
-    </html>
+  </html>
+  
