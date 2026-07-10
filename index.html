@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>OmniBoard — The Last Keyboard You’ll Ever Need</title>
 
+  <!-- Open Graph / Social Preview Tags -->
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jellylambo.github.io/Omniboard-/">
   <meta property="og:title" content="OmniBoard — The Last Keyboard You’ll Ever Need">
@@ -14,6 +15,7 @@
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
 
+  <!-- Twitter / X Card -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:url" content="https://jellylambo.github.io/Omniboard-/">
   <meta name="twitter:title" content="OmniBoard — The Last Keyboard You’ll Ever Need">
@@ -70,7 +72,6 @@
       z-index: 1;
     }
 
-    /* ── Navigation ── */
     nav {
       position: fixed;
       top: 0;
@@ -132,7 +133,6 @@
       transform: translateY(-1px);
     }
 
-    /* ── Hero ── */
     .hero {
       min-height: 100vh;
       display: flex;
@@ -176,12 +176,7 @@
       border-radius: 16px;
       border: 1px solid rgba(0, 242, 255, 0.12);
       box-shadow: 0 0 40px rgba(0, 242, 255, 0.12);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: var(--cyan);
-      font-size: 1.4rem;
-      font-weight: 500;
+      overflow: hidden;
     }
 
     .form-container {
@@ -195,29 +190,9 @@
 
     @media (max-width: 768px) {
       .hero h1 { font-size: 3.4rem; }
-      .section { padding: 100px 0; }
-      .manifesto { padding: 60px 24px; }
       .hero-content { padding: 2.5rem 1.8rem; }
     }
 
-    /* Footer social links styling */
-    .social-links a {
-      color: var(--gray);
-      font-size: 1.4rem;
-      transition: color 0.2s;
-      text-decoration: none;
-      margin: 0 12px;
-    }
-
-    .social-links a:hover {
-      color: var(--cyan);
-    }
-
-    .social-links a span {
-      font-size: 1.1rem;
-      font-weight: 500;
-    }
-    
     .features-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -253,6 +228,18 @@
       text-align: center;
       border-top: 1px solid rgba(0, 242, 255, 0.1);
     }
+
+    .social-links a {
+      color: var(--gray);
+      font-size: 1.4rem;
+      transition: color 0.2s;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+
+    .social-links a:hover {
+      color: var(--cyan);
+    }
   </style>
 </head>
 <body>
@@ -279,11 +266,12 @@
         <h1>The Last Keyboard You’ll Ever Need.</h1>
         <p>Experience the world’s first intelligent interface that thinks with you while keeping your data sovereign. No app-switching. No tracking. Just flow.</p>
 
+        <!-- ✅ YouTube Video Embedded Here -->
         <div class="video-placeholder">
           <iframe 
             width="100%" 
             height="100%" 
-            src="https://www.youtube.com/embed/Qpsf4lM39TQ?rel=0&modestbranding=1&controls=1" 
+            src="https://www.youtube.com/embed/0gTvIAqKSmo?rel=0&modestbranding=1&controls=1" 
             title="OmniBoard Demo" 
             frameborder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
@@ -377,4 +365,4 @@
   </script>
 
 </body>
-  </html>
+</html>  
